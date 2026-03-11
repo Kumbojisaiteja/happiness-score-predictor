@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Happiness</title>
+
+<link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+
+</head>
+
+<body>
+
+<div class="navbar">
+<div class="logo">
+HAPPIness<span>.score</span>
+</div>
+
+<div class="nav-links">
+<a href="/">HOME</a>
+<a href="/prediction">PREDICT</a>
+</div>
+</div>
+
+<div class="hero">
+
+<img src="{{ url_for('static', filename='images/smile.avif') }}" class="hero-img">
+<div class="content">
+
+<h1>Smiling Can Trick Your Brain Into Happiness</h1>
+
+<h3>Boost your Health</h3>
+
+<p>
+Science has shown that smiling can lift your mood, reduce stress
+and improve mental well-being.
+</p>
+
+<a href="/prediction">
+<button>GET STARTED</button>
+</a>
+
+</div>
+
+</div>
+
+</body>
+</html>

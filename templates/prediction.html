@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Prediction</title>
+
+<link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+
+</head>
+
+<body>
+
+<div class="navbar">
+
+<div class="logo">
+HAPPIness<span>.score</span>
+</div>
+
+<div class="nav-links">
+<a href="/">HOME</a>
+<a href="/prediction">PREDICT</a>
+</div>
+
+</div>
+
+<div class="container">
+
+<div class="form-box">
+
+<h2>Enter Values</h2>
+
+<form action="/predict" method="POST">
+
+<input type="number" step="any" name="economy" placeholder="Economy Score" required>
+
+<input type="number" step="any" name="family" placeholder="Family Score" required>
+
+<input type="number" step="any" name="health" placeholder="Health Score" required>
+
+<input type="number" step="any" name="freedom" placeholder="Freedom Score" required>
+
+<input type="number" step="any" name="trust" placeholder="Trust Score" required>
+
+<input type="number" step="any" name="generosity" placeholder="Generosity Score" required>
+
+<button type="submit">Predict Happiness</button>
+
+</form>
+
+</div>
+
+</div>
+
+</body>
+</html>

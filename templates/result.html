@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Result</title>
+
+<link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+
+</head>
+
+<body>
+
+<div class="navbar">
+
+<div class="logo">
+HAPPIness<span>.score</span>
+</div>
+
+<div class="nav-links">
+<a href="/">HOME</a>
+<a href="/prediction">PREDICT</a>
+</div>
+
+</div>
+
+<div class="hero">
+<img src="{{ url_for('static', filename='images/man.webp') }}" class="hero-img">
+<div class="result-box">
+
+<h2>The Happiness Score is:</h2>
+
+<p class="score">
+{{ prediction }}
+</p>
+
+</div>
+
+</div>
+
+</body>
+</html>
